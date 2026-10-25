@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keerthivasan and Ramya: A Royal Invitation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,600&family=Great+Vibes&family=Noto+Serif+Tamil:wght@400;700&display=swap">
+<style>
+:root{--g:#f3d98f;--g2:#d9a441;--ink:#fff4dc;--mut:#e8cfa6;--rose:#e85d84;--card:rgba(255,244,214,.09);--line:rgba(243,217,143,.38);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--card:rgba(255,244,214,.09)}}
+:root[data-theme="dark"]{--card:rgba(255,244,214,.09)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}html.lock{overflow:hidden}
+body{margin:0;background:#12082e;color:var(--ink);font:500 19px/1.45 'Cormorant Garamond',Georgia,serif;overflow-x:hidden}
+#bg{position:fixed;inset:0;z-index:-2}#fx{position:fixed;inset:0;z-index:-1;pointer-events:none;width:100%;height:100%}
+section{position:relative;max-width:560px;margin:0 auto;padding:56px 18px;text-align:center}
+h2{font:italic 600 32px/1.1 'Cormorant Garamond',serif;color:var(--g);margin:0 0 6px}
+.sm{font-size:16px;color:var(--mut)}.t{font-family:'Noto Serif Tamil',serif;font-size:15px;line-height:1.9;font-weight:400}
+.shim{background:linear-gradient(100deg,#fbeaa8,#d9a441 30%,#fff7cf 50%,#d9a441 70%,#fbeaa8);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:-220% 0}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity 1s,transform 1s}.js .rv.in{opacity:1;transform:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 18px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);margin:16px 0;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+/* gate */
+#gate .d{position:fixed;top:0;bottom:0;width:50%;z-index:100;background:linear-gradient(90deg,#4a0b25,#7b1a3d);transition:transform 1.8s cubic-bezier(.7,0,.2,1);box-shadow:inset 0 0 40px #0008}
+#gate .d:before{content:"";position:absolute;inset:8% 12%;border:2px solid var(--g2);border-radius:90px 90px 8px 8px;background:repeating-linear-gradient(45deg,#ffffff08 0 6px,#0000 6px 12px)}
+#gate .l{left:0;transform-origin:left}#gate .r{right:0;transform-origin:right}
+.open #gate .l{transform:perspective(900px) rotateY(-100deg)}.open #gate .r{transform:perspective(900px) rotateY(100deg)}
+#seal{position:fixed;z-index:101;left:50%;top:50%;width:132px;height:132px;margin:-66px 0 0 -66px;border-radius:50%;border:0;color:#3a0f20;font:400 36px 'Great Vibes',cursive;background:radial-gradient(circle at 35% 30%,#fff3b8,#d9a441 60%,#8f6416);box-shadow:0 0 0 6px #d9a44155,0 0 40px #ffcf6b99;animation:pu 2s infinite;cursor:pointer;transition:opacity .6s,transform .8s}
+#seal small{display:block;font:600 12px 'Cormorant Garamond',serif;letter-spacing:.12em;text-transform:uppercase}
+@keyframes pu{50%{box-shadow:0 0 0 14px #d9a44122,0 0 70px #ffcf6bcc}}
+.open #seal{opacity:0;transform:scale(2);pointer-events:none}
+/* hero */
+#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:20px}
+.scene{width:calc(100% + 36px);margin:0 -18px;height:auto}
+.tw{animation:tw 3s ease-in-out infinite alternate}.tw:nth-child(odd){animation-delay:1.3s}@keyframes tw{from{opacity:.25}to{opacity:1}}
+.walk{animation:wk 46s linear infinite}@keyframes wk{from{transform:translateX(-90px)}to{transform:translateX(390px)}}
+.names{font:400 62px/1 'Great Vibes',cursive;margin:6px 0}.names i{display:block;font:italic 600 24px 'Cormorant Garamond',serif;color:var(--rose);-webkit-text-fill-color:var(--rose)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0}.cd div{border:1px solid var(--line);border-radius:14px;padding:8px 0;background:var(--card)}
+.cd b{display:block;font:700 30px 'Cormorant Garamond',serif;color:var(--g)}.cd span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.rings{width:90px;height:44px;margin:6px auto}.rings circle{transition:transform 1.6s cubic-bezier(.3,1.4,.5,1)}.js .rings circle:first-child{transform:translateX(-26px)}.js .rings circle:last-child{transform:translateX(26px)}.rings.in circle{transform:none!important}
+.kol path{stroke-dasharray:420;stroke-dashoffset:420}.kol.in path{animation:dr 3s forwards}@keyframes dr{to{stroke-dashoffset:0}}
+.lamp .f{animation:fk 2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 100%}@keyframes fk{to{transform:scale(1.12,1.2)}}
+/* letter */
+.tg{display:inline-flex;border:1px solid var(--g2);border-radius:99px;overflow:hidden;margin:8px 0 12px}.tg button{background:none;border:0;color:var(--g);padding:7px 20px;font:600 17px 'Cormorant Garamond',serif;cursor:pointer}
+[data-l=en] .tg .b1,[data-l=ta] .tg .b2{background:var(--g2);color:#2a0a18}
+[data-l=en] .t,[data-l=ta] .e{display:none}
+#nm{width:70%;background:#0003;border:1px solid var(--line);border-radius:99px;padding:8px 16px;color:var(--ink);font:inherit;text-align:center;margin:6px 0}
+.big{font:400 42px/1.1 'Great Vibes',cursive;color:var(--g);margin:4px 0}.hd{font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-weight:700}
+.two{display:grid;gap:14px}.two .card{margin:0;text-align:left}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:3px 12px;margin:4px 2px;font-size:15px;background:#fff1d012}.chip .t{font-size:13px;display:block;line-height:1.5}
+.tl{position:relative;padding-left:46px;text-align:left;margin-top:18px}.tl:before{content:"";position:absolute;left:16px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--g),var(--rose))}
+.ev{position:relative;margin-bottom:18px}.ev svg{position:absolute;left:-46px;top:2px;width:34px;height:34px}.ev b{font-size:24px;color:var(--g)}
+.btn{display:inline-block;margin:6px 4px;padding:11px 20px;border-radius:99px;background:linear-gradient(135deg,#fbeaa8,#d9a441);color:#3a0f20;font-weight:700;text-decoration:none;font-size:18px}.btn.o{background:none;color:var(--g);border:1px solid var(--g2)}
+.lo{text-align:left}.lo p{margin:7px 0;line-height:1.3}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<canvas id="fx"></canvas><div id="bg"></div>
+
+<div id="gate"><div class="d l"></div><div class="d r"></div><button id="seal" aria-label="Open the invitation">R &amp; K<small>Tap to open</small></button></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbeaa8"/><stop offset=".5" stop-color="#d9a441"/><stop offset="1" stop-color="#8f6416"/></linearGradient>
+<radialGradient id="mg"><stop offset="0" stop-color="#fff6d8"/><stop offset=".25" stop-color="#ffe9a8" stop-opacity=".5"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+<symbol id="mo" viewBox="0 0 34 34"><path d="M24 4a14 14 0 1 0 6 22A12 12 0 0 1 24 4Z" fill="#fff0c0"/></symbol>
+<symbol id="su" viewBox="0 0 34 34"><g stroke="#ffcf5a" stroke-width="2.4" stroke-linecap="round"><path d="M17 2v5M17 27v5M2 17h5M27 17h5M6 6l3.5 3.5M24.5 24.5L28 28M28 6l-3.5 3.5M9.5 24.5L6 28"/></g><circle cx="17" cy="17" r="7" fill="#ffb52e"/></symbol>
+</defs></svg>
+
+<main>
+<section id="hero">
+<svg class="scene" viewBox="0 0 360 230" role="img" aria-label="Moonlit palace with a wedding procession passing by">
+<circle cx="285" cy="52" r="48" fill="url(#mg)"/><circle cx="285" cy="52" r="15" fill="#fff6d8"/>
+<g fill="#fff6c8"><circle class="tw" cx="30" cy="30" r="1.6"/><circle class="tw" cx="80" cy="60" r="1.2"/><circle class="tw" cx="130" cy="22" r="1.8"/><circle class="tw" cx="190" cy="48" r="1.2"/><circle class="tw" cx="230" cy="18" r="1.5"/><circle class="tw" cx="340" cy="90" r="1.4"/><circle class="tw" cx="55" cy="105" r="1.3"/><circle class="tw" cx="160" cy="88" r="1.1"/><circle class="tw" cx="315" cy="20" r="1.3"/></g>
+<g fill="#1b0b36"><path d="M110 150 Q180 60 250 150Z"/><path d="M176 70 L180 52 L184 70Z"/><rect x="100" y="150" width="160" height="62"/><path d="M62 168 Q84 126 106 168Z"/><path d="M254 168 Q276 126 298 168Z"/><rect x="58" y="166" width="48" height="46"/><rect x="254" y="166" width="48" height="46"/></g>
+<g fill="#ffcf6b"><path d="M120 190V168Q130 154 140 168V190Z"/><path d="M148 190V168Q158 154 168 168V190Z"/><path d="M176 190V164Q190 144 204 164V190Z"/><path d="M212 190V168Q222 154 232 168V190Z"/><path d="M240 190V168Q250 154 260 168V190Z"/><path d="M70 200V184Q80 172 90 184V200Z"/><path d="M270 200V184Q280 172 290 184V200Z"/></g>
+<rect y="206" width="360" height="24" fill="#0b0420"/>
+<g class="walk" fill="#080216"><g transform="translate(0 150)"><rect x="12" y="28" width="52" height="30" rx="14"/><circle cx="12" cy="36" r="13"/><path d="M4 44Q-8 54 0 66" stroke="#080216" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="18" y="50" width="9" height="22"/><rect x="48" y="50" width="9" height="22"/><rect x="26" y="16" width="26" height="12" fill="#d9a441"/><path d="M22 16Q39 -4 56 16Z" fill="#e85d84"/><circle cx="39" cy="4" r="3" fill="#ffcf6b"/></g><g transform="translate(78 168)"><circle cx="6" cy="6" r="5"/><path d="M0 12H12L14 54H-2Z"/></g><g transform="translate(98 168)"><circle cx="6" cy="6" r="5"/><path d="M0 12H12L14 54H-2Z"/><circle cx="6" cy="-2" r="2.5" fill="#ffcf6b"/></g></g>
+</svg>
+<div class="hd rv" style="margin-top:6px">Wedding Invitation</div><div class="t rv" style="color:var(--mut)">திருமண அழைப்பிதழ்</div>
+<div class="names shim rv">Keerthivasan<i>&amp;</i>Ramya</div>
+<svg class="rings rv" viewBox="0 0 90 44" fill="none" stroke="url(#gd)" stroke-width="3.5"><circle cx="34" cy="22" r="16"/><circle cx="56" cy="22" r="16"/></svg>
+<div class="rv" style="font-size:22px">Friday, 20 November 2026 · 9.00 a.m.</div>
+<div class="sm rv">Sri Lakshmi Mahal, Trichy</div>
+<div class="cd rv" id="cd"><div><b>--</b><span>Days</span></div><div><b>--</b><span>Hours</span></div><div><b>--</b><span>Mins</span></div><div><b>--</b><span>Secs</span></div></div>
+<div class="sm rv" id="cdl">until the muhurtham</div>
+</section>
+
+<section>
+<svg class="lamp rv" width="90" height="120" viewBox="0 0 70 100" aria-hidden="true"><circle cx="35" cy="34" r="30" fill="url(#mg)"/><g fill="url(#gd)" stroke="#8f6416" stroke-width=".8"><path d="M20 98L26 82H44L50 98Z"/><rect x="32" y="44" width="6" height="38"/><ellipse cx="35" cy="44" rx="20" ry="4"/><ellipse cx="13" cy="42" rx="9" ry="3"/><ellipse cx="57" cy="42" rx="9" ry="3"/></g><path class="f" d="M31 40Q27 24 35 10Q43 24 39 40Z" fill="#f6a21e"/><path class="f" d="M33 38Q32 28 35 20Q38 28 37 38Z" fill="#fff0a0"/><path class="f" d="M11 39Q8 31 14 24Q20 31 17 39Z" fill="#f6a21e"/><path class="f" d="M53 39Q50 31 56 24Q62 31 59 39Z" fill="#f6a21e"/></svg>
+<div class="rv" style="font-size:22px;color:var(--g)">Sri Ramajayam</div>
+<div class="sm rv">Thottiyam Sri Madurai Kaliamman Thunai<br>Mullipadi Sri Balagurunathar Udanurai Sri Angala Parameshwari Thunai</div>
+<svg class="kol rv" width="220" height="36" viewBox="0 0 220 36" fill="none" stroke="#f08a12" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="margin:14px auto"><path d="M6 18Q26-4 46 18T86 18T126 18T166 18T214 18"/><path d="M6 18Q26 40 46 18T86 18T126 18T166 18T214 18" stroke="#e85d84"/></svg>
+</section>
+
+<section id="letter" data-l="en">
+<h2 class="rv">With hearts filled with joy</h2>
+<div class="tg rv"><button class="b1" data-l="en">English</button><button class="b2" data-l="ta">தமிழ்</button></div>
+<div class="card rv">
+<div class="e">
+<p><b>Mr. A. Ravikumar,</b> D. Pharm, <span class="sm">E.S.I. Mobile Dispensary, Trichy</span><br><i class="sm">and</i><br><b>Mrs. V. Sujatha,</b> B.Sc., <span class="sm">Staff Nurse, Govt. Hospital, Srirangam</span></p>
+<p style="font-style:italic;font-size:21px">With hearts filled with joy, we invite you to join us in celebrating the beautiful beginning of a new chapter in the life of our beloved son</p>
+<div class="big shim">Selvan R. Keerthivasan</div><div class="sm">B.E., Software Developer, TransUnion, Chennai</div><i class="sm">with</i>
+<div class="big shim">Selvi R. Ramya</div><div class="sm">B.E., General Manager, R.R.K. Enterprises, Trichy - 12.<br>D/o. Mr. R. Ravichandran, DEEE., Managing Director, R.R.K. Enterprises &amp; Mrs. R. Rathika, M.Sc.,</div>
+<p style="font-size:21px">on <b>Friday, 20th November 2026</b><br>between 9.00 a.m. and 10.30 a.m.<br>at <b>Sri Lakshmi Mahal,</b><br>Dindigul Road, Dheeran Nagar, Trichy.</p></div>
+<div class="t"><p>பேரன்புடையீர்! வணக்கம்.<br>நிகழும் மங்களகரமான ஸ்ரீ பராபவ வருடம் கார்த்திகை மாதம் 4-ஆம் நாள் (20-11-2026) <b>வெள்ளிக்கிழமை</b> சுபயோக சுபதினத்தில் <b>காலை 9.00 மணிக்குமேல் 10.30 மணிக்குள் தனுர் லக்னத்தில்</b></p>
+<p>திரு. A. ரவிக்குமார் - திருமதி V. சுஜாதா ஆகிய எங்களது குமாரனுமான சிரஞ்சீவி <b>R. கீர்த்திவாசன்,</b> B.E., என்கிற வரனுக்கும், திரு. R. ரவிச்சந்திரன் - திருமதி R. ராதிகா அவர்களது குமாரத்தியுமான சௌபாக்கியவதி <b>R. ரம்யா,</b> B.E., என்கிற கன்னிகைக்கும்</p>
+<p>திருமணம் செய்வதாய் பெரியோர்களால் நிச்சயிக்கப்பட்டு, திருச்சிராப்பள்ளி, திண்டுக்கல் ரோடு, தீரன்நகர் பேருந்து நிருத்தம் அருகில் உள்ள <b>ஸ்ரீ லட்சுமி மஹாலில்</b> நடைபெற இருப்பதால் தாங்கள் தங்கள் சுற்றமும் நட்பும் சூழ வருகைதந்து மணமக்களை வாழ்த்தியருள வேண்டுமாய் அன்புடன் அழைக்கின்றோம்.</p></div>
+</div>
+
+</section>
+
+<section>
+<h2 class="rv">Two Families, One Celebration</h2><div class="sm rv" style="margin-bottom:14px">Tiruchirappalli · Tiruvarur</div>
+<div class="two">
+<div class="card rv"><div class="hd">The Groom’s House</div><div class="big">R. Keerthivasan</div>
+<p class="sm">Son of <b>Mr. A. Ravikumar</b>, D.Pharm, and <b>Mrs. V. Sujatha</b>, B.Sc., Staff Nurse</p>
+<p class="sm">Grandson of Thottiyam’s<br><b>R. Ayyavu Naidu – A. Dhanalakshmi</b> (paternal)<br><b>R. Venkatasami Naidu – V. Meerabai</b> (maternal)</p></div>
+<div class="card rv"><div class="hd">The Bride’s House</div><div class="big">R. Ramya</div>
+<p class="sm">Daughter of <b>Mr. R. Ravichandran</b>, DEEE., Managing Director, and <b>Mrs. R. Rathika</b>, M.Sc.</p>
+<p class="sm">Granddaughter of Athur’s <b>R. Raji Naidu – R. Rajam</b> (paternal) and Trichy’s <b>K.S. Parthasarathi – P. Rajalakshmi</b> (maternal)</p></div></div>
+</section>
+
+<section>
+<h2 class="rv">The Celebration</h2>
+<div class="tl">
+<div class="ev rv"><svg><use href="#mo" width="34" height="34"/></svg><b>Thursday, 19 November</b><br>Reception and dinner from 6.00 p.m. onwards<div class="t" style="color:var(--mut)">வரவேற்பு · விருந்து உபசரிப்பு</div></div>
+<div class="ev rv"><svg><use href="#su" width="34" height="34"/></svg><b>Friday, 20 November</b><br>Muhurtham, 9.00 to 10.30 a.m.<div class="t" style="color:var(--mut)">தனுர் லக்னம்</div></div></div>
+<div class="rv" style="margin-top:12px"><span class="chip">Sri Parabhava year<span class="t">ஸ்ரீ பராபவ வருடம்</span></span><span class="chip">Karthigai 4<span class="t">கார்த்திகை 4</span></span><span class="chip">Waxing Ekadashi<span class="t">வளர்பிறை ஏகாதசி</span></span><span class="chip">Uthirattathi star<span class="t">உத்திரட்டாதி</span></span><span class="chip">Siddha yoga<span class="t">சித்தயோகம்</span></span></div>
+</section>
+
+<section>
+<h2 class="rv">Find Us</h2>
+<div class="card rv"><div style="font-size:26px;color:var(--g)">Sri Lakshmi Mahal</div>Dindigul Road, Dheeran Nagar, Trichy<div class="sm">Near the Dheeran Nagar bus stop</div>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sri+Lakshmi+Mahal+Dheeran+Nagar+Trichy" target="_blank" rel="noopener">Open map</a><a class="btn o" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20of%20Keerthivasan%20%26%20Ramya&dates=20261120T033000Z%2F20261120T050000Z&location=Sri%20Lakshmi%20Mahal%2C%20Dindigul%20Road%2C%20Dheeran%20Nagar%2C%20Trichy" target="_blank" rel="noopener">Add to calendar</a></div>
+</section>
+
+<section>
+<h2 class="rv">With Love and Blessings</h2>
+<div class="card lo rv"><div class="hd">Earnestly requested by</div>
+<p><b>R. Ravichandran</b>, DEEE. – <b>R. Rathika</b>, M.Sc., <span class="sm">Managing Director, R.R.K. Enterprises, Trichy - 620 012</span></p>
+<p><b>M. Saravanan</b>, B.E., <span class="sm">Business Analyst, Temenos, Chennai</span></p>
+<p><b>S. Sri Bhuvaneswari</b>, M.Sc. · <b>S. Aadharshini</b>, B.E. · <b>S. Madhumathi</b></p></div>
+<div class="card lo rv"><div class="hd">Yours affectionately</div>
+<p><b>A. Ravikumar</b>, D.Pharm, <span class="sm">E.S.I. Mobile Dispensary, Trichy</span></p>
+<p><b>V. Sujatha</b>, B.Sc., <span class="sm">Staff Nurse, Govt. Hospital, Srirangam</span></p>
+<p><b>A.R. Krithik Naveen</b>, B.Tech., <span class="sm">Software Developer, Cognizant, Chennai</span></p>
+<p><b>A. Rajagopal – R. Gowri</b> <span class="sm">Havildar BSF (Retd)</span></p>
+<p><b>A. Rajaram – R. Prema</b>, B.Sc., M.A., <span class="sm">Hony Subedar Major (Retd), Indian Army</span></p>
+<p><b>T.V. Rameshbabu – R. Revathi</b></p></div>
+</section>
+
+<section style="padding-bottom:90px">
+<div class="big shim rv" style="font-size:46px">See you there</div>
+<p class="rv">With best compliments from<br><b style="color:var(--g)">Relatives and Friends</b></p>
+<div class="sm rv">From: <b>A. Ravikumar – V. Sujatha</b><br>19, Kannaiyan Nagar, Moolathoppu, Melur Road,<br>Srirangam, Trichy - 620 006.</div>
+<div class="rv" style="margin-top:12px"><a class="btn" href="tel:9894839800">Call 9894839800</a><a class="btn o" href="https://wa.me/?text=You%20are%20warmly%20invited%20to%20the%20wedding%20of%20Keerthivasan%20%26%20Ramya%20on%2020%20November%202026%20at%20Sri%20Lakshmi%20Mahal%2C%20Trichy." target="_blank" rel="noopener">Share on WhatsApp</a></div>
+</section>
+</main>
+
+<script>
+(function(){
+var H=document.documentElement,$=function(s){return document.querySelector(s)};
+H.classList.add('js','lock');
+$('#seal').onclick=function(){document.body.classList.add('open');setTimeout(function(){$('#gate').remove();H.classList.remove('lock')},2000)};
+var bg=$('#bg');function L(a,b,p){return Math.round(a+(b-a)*p)}
+function sky(){var m=document.body.scrollHeight-innerHeight,p=m>0?Math.min(1,scrollY/m):0;
+bg.style.background='linear-gradient(180deg,rgb('+L(15,74,p)+','+L(8,19,p)+','+L(38,71,p)+'),rgb('+L(58,196,p)+','+L(15,85,p)+','+L(63,47,p)+'))'}
+addEventListener('scroll',sky,{passive:true});sky();
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+var T=Date.UTC(2026,10,20,3,30);
+function tick(){var d=T-Date.now(),b=document.querySelectorAll('#cd b');
+if(d<=0){$('#cdl').textContent='Today we celebrate!';b.forEach(function(x){x.textContent='0'});return}
+var v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];b.forEach(function(x,i){x.textContent=String(v[i]).padStart(2,'0')})}
+tick();setInterval(tick,1000);
+document.querySelectorAll('.tg button').forEach(function(b){b.onclick=function(){$('#letter').dataset.l=b.dataset.l}});
+
+var c=$('#fx'),x=c.getContext('2d'),P=[],cols=['#f08a12','#ffb52e','#e85d84','#fff3d6'],W,Hh;
+function rs(){W=c.width=innerWidth;Hh=c.height=innerHeight}rs();addEventListener('resize',rs);
+for(var i=0;i<34;i++)P.push({x:Math.random()*1000,y:Math.random()*1000,r:2+Math.random()*4,s:.3+Math.random()*.8,w:Math.random()*6,c:cols[i%4]});
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)(function f(){x.clearRect(0,0,W,Hh);
+P.forEach(function(p){p.y+=p.s;p.w+=.02;p.x+=Math.sin(p.w)*.6;if(p.y>Hh+10){p.y=-10;p.x=Math.random()*W}
+x.save();x.translate(p.x%W,p.y);x.rotate(p.w);x.globalAlpha=.75;x.fillStyle=p.c;x.beginPath();x.ellipse(0,0,p.r*1.6,p.r,0,0,7);x.fill();x.restore()});
+requestAnimationFrame(f)})();
+})();
+</script>
+</body></html>
